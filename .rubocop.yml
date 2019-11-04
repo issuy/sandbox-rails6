@@ -1,0 +1,40 @@
+AllCops:
+  Exclude:
+    - .git/**/*
+    - bin/*
+    - db/schema.rb
+    - log/**/*
+    - node_modules/**/*
+    - tmp/**/*
+    - public/**/*
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Exclude:
+    - app/controllers/**/*.rb
+    - app/helpers/**/*.rb
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/MixinUsage:
+  Include:
+    - app/**/*.rb
+
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
